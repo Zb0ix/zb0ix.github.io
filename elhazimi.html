@@ -1,0 +1,301 @@
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نبراس الدّ يـــــــــــن</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Amiri', serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav ul li a.active {
+            color: #008080;
+        }
+        .hero {
+            text-align: center;
+            padding: 20px;
+        }
+        .hero .logo {
+            margin: 0 auto;
+        }
+        .hero .content {
+            margin: 20px 0;
+        }
+        .hero h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .hero .highlight {
+            color: #008080;
+        }
+        .hero button {
+            background-color: #008080;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .podcast-section {
+            text-align: center;
+            padding: 20px;
+        }
+        .podcast-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        .podcast-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .podcast-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        .podcast-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .podcast-card h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .podcast-card p {
+            color: #666;
+        }
+        footer {
+            background-color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer .highlight {
+            color: #008080;
+        }
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 700px;
+            position: relative;
+        }
+        .close {
+            color: #aaa;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+/* General styling for tabs */
+.tab {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: #008080;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.3s, border-bottom 0.3s;
+    text-decoration: none; /* Removes underline */
+}
+
+/* Styling for active tab */
+.tab.active {
+    color: #000;
+    border-bottom: 2px solid #008080; /* Adds an underline only to the active tab */
+}
+
+/* Styling for tabs on hover */
+.tab:hover {
+    color: #000;
+    border-bottom: 2px solid #008080; /* Adds an underline on hover */
+}
+
+/* Remove underline for links inside tabs */
+.tab a {
+    text-decoration: none; /* Removes underline from the links inside tabs */
+    color: inherit; /* Inherits color from the parent .tab element */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul><li><a href="index.html" class="active">الصفحة الرئيسية</a></li>
+                <li><a href="quran.html">القران الكريم</a></li>
+                <li><a href="ahadith.html">أحاديث</a></li>
+                <li><a href="podcast.html">بودكاست</a></li>
+                <li><a href="adhkar.html">أذكار</a></li>
+                <li><a href="#">المزيد</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="podcast-section">
+            <h2>بودكــــــاســـــــــات</h2>
+            <div class="tabs">
+                <div class="tab active"><a href="podcast.html">بودكاست لك أختي</a></div>
+                <div class="tab"><a href="khamis.html">الشيخ د.عثمان الخميس</a></div>
+                <div class="tab"><a href="hayfa.html">د. هيفاء يونس</a></div>
+<div class="tab"><a href="din w tin.html">دين و طين</a></div>
+<div class="tab"><a href="khaled jaber.html">د خالد بن حمد الجابر</a></div>
+<div class="tab"><a href="elhazimi.html">ياسر الحزيمي</a></div>
+
+
+            </div>
+            <div class="podcast-container">
+                <div class="podcast-card">
+                    <img src="https://external.xx.fbcdn.net/emg1/v/t13/11079582292110548635?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FpJ0auP7dbcY%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399yuI3S0KQDNPRU-8O9WpUlIEYuQBk9-6Jy8onnCeo5eU&oe=66AC7D62&_nc_sid=c24604" alt="بودكاست 1" onclick="openModal('F-myfG2BCDikHU5A')">
+                    <h3>كيف تنجح العلاقات مع ياسر الحزيمي | بودكاست فنجان
+                    </h3>
+                    <p></p>
+                </div>
+                <div class="podcast-card">
+                    <img src="https://external.xx.fbcdn.net/emg1/v/t13/11325243462865406926?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FbJ5KRP9mRmI%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399kpup_JxeRRpihdMP4UfDkiTV--J-3enqAmgo6Tbq00M&oe=66AC92E7&_nc_sid=c24604" alt="بودكاست 2" onclick="openModal('bJ5KRP9mRmI')">
+                    <h3>اقنعه المشاهير وما خلف الشاشات | مع ياسر الحزيمي
+                    </h3>
+                    <p> </p>
+                </div>
+                <div class="podcast-card">
+                    <img src="https://external.xx.fbcdn.net/emg1/v/t13/1035676267573292568?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FoxpH28QAw24%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399dauih94uw0MXc4l8tnv203L6rdNFUqdZqOw38oWP0DQ&oe=66AC8CC2&_nc_sid=c24604" alt="بودكاست 3" onclick="openModal('oxpH28QAw24')">
+                    <h3>  أسرار لا تريدك المرأة أن تعرفها عنها (لا يعرفها كل الرجال) ملخص سيكولويجة المرأة مع | د.ياسر الحزيمي
+                    </h3>
+                </div>                   
+                 <p> </p>
+                 <div class="podcast-card">
+                    <img src="https://external.xx.fbcdn.net/emg1/v/t13/13177436740108506058?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FlNVYx6xMxco%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399bSNXq8DJKvNb-uddTVY25OaHbLBNg1nmBX8UF5uSeOk&oe=66AC99A1&_nc_sid=c24604" alt="بودكاست 3" onclick="openModal('jiaeQDrWIujDPHpv')">
+                    <h3>   قصة الشيطان عدو النجاح الحقيقي | ياسر الحزيمي
+  
+                    </h3>
+                </div>                   
+                 <p> </p>
+                 <div class="podcast-card">
+                    <img src="https://external.xx.fbcdn.net/emg1/v/t13/6780624353046028199?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FLyJY-c0eHGM%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399FC64rp4fPUPtrl5po96z5QnosytHw5_yADNW_6ToNXM&oe=66AC9521&_nc_sid=c24604" alt="بودكاست 3" onclick="openModal('zzQO8MJ1Q3T9NzgJ')">
+                    <h3>   مهارات في إدارة العلاقات | ياسر الحزيمي
+  
+                    </h3>
+                </div>                   
+                 <p> </p>
+                 <div class="podcast-card">
+                    <img src="https://external.xx.fbcdn.net/emg1/v/t13/10251598846758327757?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FVJMOfJCK058%2Fmaxresdefault.jpg%3Fsqp%3D-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBkgUyh_MA8%3D%26rs%3DAOn4CLCNBN_jQxj0jqZfKny9XvoH6nry_Q&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399PbgwV8ovIh6gcwphWNZDQ-6pn-Ziwoog1vTjFcYuSwU&oe=66AC7EE0&_nc_sid=c24604" alt="بودكاست 3" onclick="openModal('pgbxh06c6nJJiG-X')">
+                    <h3>     وصايا للتعامل مع الخوف | ياسر الحزيمي
+
+                    </h3>
+                </div>                   
+                 <p> </p>
+                 <div class="podcast-card">
+                    <img src="https://external.xx.fbcdn.net/emg1/v/t13/1191475559549147760?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FvClz2WSeSys%2Fmaxresdefault.jpg%3Fsqp%3D-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGC4gYChlMA8%3D%26rs%3DAOn4CLCAqksvHiWqw8Battv2W39EEXejhQ&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399iLBy5_Q7GeoXsB893i3eDKRrOslxA08kAsWq9upu3KQ&oe=66AC9C01&_nc_sid=c24604" alt="بودكاست 3" onclick="openModal('Alm-eHONV5Ds8bO8')">
+                    <h3>     الردود الذكية | ياسر الحزيمي
+
+                    </h3>
+                </div>                   
+                 <p> </p>
+                 <div class="podcast-card">
+                    <img src="https://external.xx.fbcdn.net/emg1/v/t13/13408737803709748894?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2F9yTpER4rcCA%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399Jn7mNLTN8i7maHNXejpkcj60zK80dxt5rlLiZZBMbQc&oe=66AC85A4&_nc_sid=c24604" alt="بودكاست 3" onclick="openModal('EnBAx8kGTZVJFul-')">
+                    <h3>     كيف تحدد تخصصك الجامعي ؟ | ياسر الحزيمي
+
+                    </h3>
+                </div>                   
+                 <p> </p>
+                
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 <span class="highlight">نبراس الدّ يـــــــــــن</span>. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="podcastModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="podcastIframe" width="100%" height="315" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        function openModal(videoId) {
+            var modal = document.getElementById('podcastModal');
+            var iframe = document.getElementById('podcastIframe');
+            iframe.src = 'https://www.youtube.com/embed/' + videoId;
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            var modal = document.getElementById('podcastModal');
+            var iframe = document.getElementById('podcastIframe');
+            iframe.src = '';
+            modal.style.display = 'none';
+        }
+
+        // Set active tab based on current page
+        document.querySelectorAll('.tab a').forEach(link => {
+            if (link.href === window.location.href) {
+                link.parentElement.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

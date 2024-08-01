@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القرآن الكريم</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Amiri', serif;
+            background-color: #f3f9fe;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            text-align: center;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a.active,
+        nav ul li a:hover {
+            color: #008080;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .button-flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .button-flex select, .button-flex button {
+            background-color: #008080;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .button-flex select {
+            width: 200px;
+        }
+
+        .button-flex button:hover {
+            background-color: #005f5f;
+        }
+
+        .reciter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #008080;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .reciter img {
+            border-radius: 20px;
+            width: 200px;
+            height: auto;
+            background-color: #008080;
+            padding: 10px;
+        }
+
+        .audio-player {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .content-wrapper {
+                flex-direction: row;
+            }
+            .button-flex {
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+        }
+
+        footer {
+            background-color: #fff;
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            color: #008080;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a class="active" href="index.html">الصفحة الرئيسية</a>
+                </li>
+                <li>
+                    <a href="quran-mp3.html">القرآن الكريم</a>
+                </li>
+                <li>
+                    <a href="ahadith.html">أحاديث</a>
+                </li>
+                <li>
+                    <a href="podcast.html">بودكاست</a>
+                </li>
+                <li>
+                    <a href="adhkar.html">أذكار</a>
+                </li>
+                <li>
+                    <a href="#">المزيد</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>اختر السورة</h2>
+        <div class="reciter">
+            <img src="6.jpg" alt="Reciter Image">
+            <audio id="audioPlayer" class="audio-player" controls>
+                <source id="audioSource" src="" type="audio/mp3">
+                متصفحك لا يدعم عنصر الصوت.
+            </audio>
+        </div>
+        <div class="content-wrapper">
+            <div class="button-flex">
+                <select id="surahSelect">
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/001.mp3">سورة الفاتحة</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/002.mp3">سورة البقرة</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/003.mp3">سورة آل عمران</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/004.mp3">سورة النساء</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/005.mp3">سورة المائدة</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/006.mp3">سورة الأنعام</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/007.mp3">سورة الأعراف</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/008.mp3">سورة الأنفال</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/009.mp3">سورة التوبة</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/010.mp3">سورة يونس</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/011.mp3">سورة هود</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/012.mp3">سورة يوسف</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/013.mp3">سورة الرعد</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/014.mp3">سورة إبراهيم</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/015.mp3">سورة الحجر</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/016.mp3">سورة النحل</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/017.mp3">سورة الإسراء</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/018.mp3">سورة الكهف</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/019.mp3">سورة مريم</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/020.mp3">سورة طه</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/021.mp3">سورة الأنبياء</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/022.mp3">سورة الحج</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/023.mp3">سورة المؤمنون</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/024.mp3">سورة النور</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/025.mp3">سورة الفرقان</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/026.mp3">سورة الشعراء</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/027.mp3">سورة النمل</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/028.mp3">سورة القصص</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/029.mp3">سورة العنكبوت</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/030.mp3">سورة الروم</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/031.mp3">سورة لقمان</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/032.mp3">سورة السجدة</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/033.mp3">سورة الأحزاب</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/034.mp3">سورة سبأ</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/035.mp3">سورة فاطر</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/036.mp3">سورة يس</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/037.mp3">سورة الصافات</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/038.mp3">سورة ص</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/039.mp3">سورة الزمر</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/040.mp3">سورة غافر</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/041.mp3">سورة فصلت</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/042.mp3">سورة الشورى</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/043.mp3">سورة الزخرف</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/044.mp3">سورة الدخان</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/045.mp3">سورة الجاثية</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/046.mp3">سورة الأحقاف</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/047.mp3">سورة محمد</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/048.mp3">سورة الفتح</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/049.mp3">سورة الحجرات</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/050.mp3">سورة ق</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/051.mp3">سورة الذاريات</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/052.mp3">سورة الطور</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/053.mp3">سورة النجم</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/054.mp3">سورة القمر</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/055.mp3">سورة الرحمن</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/056.mp3">سورة الواقعة</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/057.mp3">سورة الحديد</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/058.mp3">سورة المجادلة</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/059.mp3">سورة الحشر</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/060.mp3">سورة الممتحنة</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/061.mp3">سورة الصف</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/062.mp3">سورة الجمعة</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/063.mp3">سورة المنافقون</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/064.mp3">سورة التغابن</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/065.mp3">سورة الطلاق</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/066.mp3">سورة التحريم</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/067.mp3">سورة الملك</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/068.mp3">سورة القلم</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/069.mp3">سورة الحاقة</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/070.mp3">سورة المعارج</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/071.mp3">سورة نوح</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/072.mp3">سورة الجن</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/073.mp3">سورة المزمل</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/074.mp3">سورة المدثر</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/075.mp3">سورة القيامة</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/076.mp3">سورة الإنسان</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/077.mp3">سورة المرسلات</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/078.mp3">سورة النبأ</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/079.mp3">سورة النازعات</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/080.mp3">سورة عبس</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/081.mp3">سورة التكوير</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/082.mp3">سورة الإنفطار</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/083.mp3">سورة المطففين</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/084.mp3">سورة الإنشقاق</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/085.mp3">سورة البروج</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/086.mp3">سورة الطارق</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/087.mp3">سورة الأعلى</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/088.mp3">سورة الغاشية</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/089.mp3">سورة الفجر</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/090.mp3">سورة البلد</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/091.mp3">سورة الشمس</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/092.mp3">سورة الليل</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/093.mp3">سورة الضحى</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/094.mp3">سورة الشرح</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/095.mp3">سورة التين</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/096.mp3">سورة العلق</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/097.mp3">سورة القدر</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/098.mp3">سورة البينة</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/099.mp3">سورة الزلزلة</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/100.mp3">سورة العاديات</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/101.mp3">سورة القارعة</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/102.mp3">سورة التكاثر</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/103.mp3">سورة العصر</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/104.mp3">سورة الهمزة</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/105.mp3">سورة الفيل</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/106.mp3">سورة قريش</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/107.mp3">سورة الماعون</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/108.mp3">سورة الكوثر</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/109.mp3">سورة الكافرون</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/110.mp3">سورة النصر</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/111.mp3">سورة المسد</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/112.mp3">سورة الإخلاص</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/113.mp3">سورة الفلق</option>
+                    <option value="C:/Users/Error/Desktop/Nasamat/Surahs4/114.mp3">سورة الناس</option>
+                    
+
+                </select>
+                <button onclick="playSurah()">تشغيل</button>
+                <button onclick="pauseSurah()">إيقاف</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const audioPlayer = document.getElementById('audioPlayer');
+        const audioSource = document.getElementById('audioSource');
+        const surahSelect = document.getElementById('surahSelect');
+
+        function playSurah() {
+            const selectedSurah = surahSelect.value;
+            if (selectedSurah) {
+                audioSource.src = selectedSurah;
+                audioPlayer.load();
+                audioPlayer.play();
+            } else {
+                alert("الرجاء اختيار سورة لتشغيلها");
+            }
+        }
+
+        function pauseSurah() {
+            audioPlayer.pause();
+        }
+    </script>
+
+</body>
+</html>

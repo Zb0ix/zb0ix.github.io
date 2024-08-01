@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القــــرآن الكريــــــم</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your common styles -->
+    <style>
+        /* Custom styles for your sections */
+        .section {
+            display: flex;
+            justify-content: space-around; /* Adjust spacing between sections */
+            align-items: center; /* Vertically center items */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            margin-top: 20px; /* Adjust top margin */
+            padding: 20px; /* Add padding to sections */
+        }
+
+        .section-one,
+        .section-two {
+            text-align: center; /* Center align text */
+            max-width: 300px; /* Limit section width */
+        }
+
+        .section-one-img,
+        .section-two-img {
+            position: relative;
+            margin-bottom: 20px; /* Adjust spacing between image and text */
+        }
+
+        .section-one-img img,
+        .section-two-img img {
+            width: 100%; /* Ensure image fills its container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Rounded corners for images */
+        }
+
+        .section-one-text,
+        .section-two-text {
+            text-align: center; /* Center align text */
+            margin-top: 10px; /* Adjust top margin */
+        }
+
+        .section-one-text p,
+        .section-two-text p {
+            margin: 0; /* Remove default margin */
+            font-size: 18px; /* Adjust font size */
+            color: #333; /* Text color */
+        }
+
+        .section-one-text a,
+        .section-two-text a {
+            display: inline-block; /* Ensure link takes full width */
+            margin-top: 10px; /* Adjust top margin for link */
+            text-decoration: none; /* Remove underline from link */
+        }
+
+        .section-one-text button,
+        .section-two-text button {
+            display: block; /* Display button as block */
+            margin: 10px auto 0; /* Center align button */
+            padding: 10px 20px; /* Adjust button padding */
+            background-color: #008080; /* Button background color */
+            color: white; /* Button text color */
+            border: none; /* Remove button border */
+            border-radius: 5px; /* Rounded corners for button */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition for background color */
+        }
+
+        .section-one-text button:hover,
+        .section-two-text button:hover {
+            background-color: #008080; /* Darker background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">الصفحة الرئيسية</a></li>
+                <li><a href="quran.html">القران الكريم</a></li>
+                <li><a href="ahadith.html">أحاديث</a></li>
+                <li><a href="podcast.html">بودكاست</a></li>
+                <li><a href="adhkar.html">أذكار</a></li>
+                <li><a href="#">المزيد</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="section">
+            <div class="section-one">
+                <div class="section-one-img">
+                    <img src="quran1.jpg" alt="القران الكريم مكتوب كاملاً اقرأ الآن">
+                </div>
+                <div class="section-one-text">
+                    <p>القران الكريم مكتوب كاملاً اقرأ الآن</p>
+                    <a href="/quran-text.html">
+                        <button>اقرأ الآن</button>
+                        <br>
+                    </a>
+                </div>
+            </div>
+            <div class="section-two">
+                <div class="section-two-img">
+                    <img src="quran2.jpg" alt="استمع الآن الى القران الكريم بجميع الأصوات">
+                </div>
+                <div class="section-two-text">
+                    <p>استمع الآن الى القران الكريم بجميع الأصوات</p>
+                    <a href="quran-mp3.html">
+                        <button>استمع الآن</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>جميع الحقوق محفوظة لدى <span class="highlight">Mohamed Amine Labbaoui</span> ©</p>
+    </footer>
+</body>
+</html>

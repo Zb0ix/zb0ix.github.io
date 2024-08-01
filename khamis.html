@@ -1,0 +1,320 @@
+<html lang="ar" dir="rtl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نبراس الدّ يـــــــــــن</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: 'Amiri', serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #008080;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero .logo {
+    margin: 0 auto;
+}
+
+.hero .content {
+    margin: 20px 0;
+}
+
+.hero h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.hero .highlight {
+    color: #008080;
+}
+
+.hero button {
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.podcast-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.podcast-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.podcast-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.podcast-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.podcast-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.podcast-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.podcast-card p {
+    color: #666;
+}
+
+footer {
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer .highlight {
+    color: #008080;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* General styling for tabs */
+.tab {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: #008080;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.3s, border-bottom 0.3s;
+    text-decoration: none; /* Removes underline */
+}
+
+/* Styling for active tab */
+.tab.active {
+    color: #000;
+    border-bottom: 2px solid #008080; /* Adds an underline only to the active tab */
+}
+
+/* Styling for tabs on hover */
+.tab:hover {
+    color: #000;
+    border-bottom: 2px solid #008080; /* Adds an underline on hover */
+}
+
+/* Remove underline for links inside tabs */
+.tab a {
+    text-decoration: none; /* Removes underline from the links inside tabs */
+    color: inherit; /* Inherits color from the parent .tab element */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">الصفحة الرئيسية</a></li>
+                <li><a href="quran.html">القران الكريم</a></li>
+                <li><a href="ahadith.html">أحاديث</a></li>
+                <li><a href="podcast.html">بودكاست</a></li>
+                <li><a href="adhkar.html">أذكار</a></li>
+                <li><a href="#">المزيد</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="podcast-section">
+            <h2>بودكــــــاســـــــــات</h2>
+            <div class="tabs">
+                <div class="tab active"><a href="podcast.html">بودكاست لك أختي</a></div>
+                <div class="tab"><a href="khamis.html">الشيخ د.عثمان الخميس</a></div>
+                <div class="tab"><a href="hayfa.html">د. هيفاء يونس</a></div>
+<div class="tab"><a href="din w tin.html">دين و طين</a></div>
+<div class="tab"><a href="khaled jaber.html">د خالد بن حمد الجابر</a></div>
+<div class="tab"><a href="elhazimi.html">ياسر الحزيمي</a></div>
+
+                
+            </div>
+            <div class="podcast-container">
+                <div class="podcast-card">
+                    <img src="https://external.xx.fbcdn.net/emg1/v/t13/13680440053635117611?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FB5IALnKOHqE%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q3997ZJEQfswi3FVeMaxKsevsG-RFc2GYr-gipBNAI707Ug&oe=66AC3E0F&_nc_sid=c24604" alt="بودكاست 1" onclick="openModal('B5IALnKOHqE')">
+                    <h3> العودة للذنب بعد التوبة | الشيخ د.عثمان محمد الخميس
+
+                    </h3>
+                    <p>
+                        
+
+</p>
+                </div>
+                <div class="podcast-card">
+                    <img src="https://external.xx.fbcdn.net/emg1/v/t13/1768999129961193860?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FlAxcOeXXyPQ%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399ljsF5OmtKcGf6mCD1gXytHUMmo8VefFneVxHPRJJ2pM&oe=66AC43D1&_nc_sid=c24604" alt="بودكاست 2" onclick="openModal('lAxcOeXXyPQ')">
+                    <h3>اضاءات دينية: جلسة استفهام (1/2) | بدون ورق 116 | الشيخ د.عثمان محمد الخميس
+                    </h3>
+                    <p>
+
+</p>
+                </div>
+                <div class="podcast-card">
+                    <img src="https://external.xx.fbcdn.net/emg1/v/t13/14060028822997378890?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FsR_uY1Az5PM%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399O0a3mh-R9ML-tVtDYbW30sG-7STtnU-dUWd5nPJIPFw&oe=66AC4575&_nc_sid=c24604" alt="بودكاست 3" onclick="openModal('sR_uY1Az5PM')">
+                    <h3>كن مميز محاضرة قمة في الفائدة والروعة للشيخ د.عثمان الخميس
+                    </h3>
+                    <p>
+
+</p>
+                </div>
+                <div class="podcast-card">
+                    <img src="https://external.xx.fbcdn.net/emg1/v/t13/1676121208416174934?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FWHBTxrh0dhw%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q3998AwckNrwbm_cqa2ROc6bpZPuwauI-GG2DsV_08tXSTk&oe=66AC28A3&_nc_sid=c24604" alt="بودكاست 4" onclick="openModal('WHBTxrh0dhw')">
+                    <h3>أجمل محاضرة للدكتور عثمان الخميس {وَفِي السَّمَاءِ رِزْقُكُمْ وَمَا تُوعَدُونَ}
+                    </h3>
+                    <p>
+
+</p>
+<div class="podcast-card">
+    <img src="https://external.xx.fbcdn.net/emg1/v/t13/7759860403623922899?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FZFSa5PpVb84%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q3996ZedVyTGuH3P_34Yl5n6hee5xWt8mzTnPrxIjhSdrDo&oe=66AC5189&_nc_sid=c24604" alt="بودكاست 1" onclick="openModal('ZFSa5PpVb84')">
+    <h3> الخشوع في الصلاة / الشيخ د. عثمان الخميس
+
+    </h3>
+    <p>
+
+</p>
+</div>
+  
+            </div>
+        </div></section>
+    </main>
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <iframe id="videoPlayer" width="560" height="315" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 <span class="highlight">نبراس الدّ يـــــــــــن</span>. جميع الحقوق محفوظة.</p>
+    </footer>
+    <script>
+function openModal(videoId) {
+    var modal = document.getElementById("videoModal");
+    var videoPlayer = document.getElementById("videoPlayer");
+    videoPlayer.src = "https://www.youtube.com/embed/" + videoId;
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    var modal = document.getElementById("videoModal");
+    var videoPlayer = document.getElementById("videoPlayer");
+    videoPlayer.src = "";
+    modal.style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    var closeBtn = document.querySelector(".close");
+    closeBtn.addEventListener("click", closeModal);
+
+    window.addEventListener("click", function(event) {
+        var modal = document.getElementById("videoModal");
+        if (event.target == modal) {
+            closeModal();
+        }
+    });
+});
+
+    </script>
+
+
+</body></html>

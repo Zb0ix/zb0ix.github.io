@@ -1,0 +1,380 @@
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نبراس الدّ يـــــــــــن</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Amiri', serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav ul li a.active {
+            color: #008080;
+        }
+        .hero {
+            text-align: center;
+            padding: 20px;
+        }
+        .hero .logo {
+            margin: 0 auto;
+        }
+        .hero .content {
+            margin: 20px 0;
+        }
+        .hero h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .hero .highlight {
+            color: #008080;
+        }
+        .hero button {
+            background-color: #008080;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .podcast-section {
+            text-align: center;
+            padding: 20px;
+        }
+        .podcast-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        .podcast-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .podcast-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        .podcast-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .podcast-card h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .podcast-card p {
+            color: #666;
+        }
+        footer {
+            background-color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer .highlight {
+            color: #008080;
+        }
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 700px;
+            position: relative;
+        }
+        .close {
+            color: #aaa;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+/* General styling for tabs */
+.tab {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: #008080;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.3s, border-bottom 0.3s;
+    text-decoration: none; /* Removes underline */
+}
+
+/* Styling for active tab */
+.tab.active {
+    color: #000;
+    border-bottom: 2px solid #008080; /* Adds an underline only to the active tab */
+}
+
+/* Styling for tabs on hover */
+.tab:hover {
+    color: #000;
+    border-bottom: 2px solid #008080; /* Adds an underline on hover */
+}
+
+/* Remove underline for links inside tabs */
+.tab a {
+    text-decoration: none; /* Removes underline from the links inside tabs */
+    color: inherit; /* Inherits color from the parent .tab element */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">الصفحة الرئيسية</a></li>
+                <li><a href="quran.html">القران الكريم</a></li>
+                <li><a href="ahadith.html">أحاديث</a></li>
+                <li><a href="podcast.html">بودكاست</a></li>
+                <li><a href="adhkar.html">أذكار</a></li>
+                <li><a href="#">المزيد</a></li>
+            </ul>
+        </nav>
+    </header>
+    <html lang="ar"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>أذكار الصباح والمساء والنوم</title>
+        <style>
+            body {
+                font-family: 'Amiri', serif;
+                background-color: #f0f0f0;
+                color: #008080;
+                text-align: center;
+            }
+            .tabs {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+            .tab {
+                padding: 10px 20px;
+                margin: 0 5px;
+                border: 2px solid #008080;
+                border-radius: 10px 10px 0 0;
+                background-color: #ffffff;
+            }
+            .tab.active {
+                background-color: #008080;
+                color: white;
+            }
+            .adhkar-container {
+                display: none;
+                margin: 0 auto;
+                padding: 20px;
+                width: 80%;
+                border: 2px solid #008080;
+                border-radius: 10px;
+                background-color: #ffffff;
+            }
+            .control-buttons {
+                margin-top: 20px;
+            }
+            .control-buttons button {
+                background-color: #008080;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                margin: 5px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .control-buttons button:hover {
+                background-color: #006666;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>أذكار الصباح والمساء والنوم</h1>
+        <div class="tabs">
+            <div class="tab" onclick="switchTab('sabah')">أذكار الصباح</div>
+            <div class="tab" onclick="switchTab('masa')">أذكار المساء</div>
+            <div class="tab" onclick="switchTab('nawem')">أذكار النوم</div>
+        </div>
+    
+        <div id="sabah" class="adhkar-container">
+            <!-- Adhkar Sabah will be displayed here -->
+        </div>
+        <div id="masa" class="adhkar-container">
+            <!-- Adhkar Masa will be displayed here -->
+        </div>
+        <div id="nawem" class="adhkar-container">
+            <!-- Adhkar Nawem will be displayed here -->
+        </div>
+    
+        <div class="control-buttons">
+            <button onclick="previousAdhkar()">الذكر السابق</button>
+            <button onclick="nextAdhkar()">الذكر التالي</button>
+            <button onclick="restartAdhkar()">بدء من جديد</button>
+        </div>
+    
+        <script>
+            const adhkarSabah = [
+                "أصبحنا وأصبح الملك لله والحمد لله لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير.",
+                "اللهم بك أصبحنا وبك أمسينا وبك نحيا وبك نموت وإليك النشور.",
+                "أصبحنا على فطرة الإسلام، وكلمة الإخلاص، ودين نبينا محمد صلى الله عليه وسلم، وملة أبينا إبراهيم حنيفا مسلما وما كان من المشركين."
+            ];
+    
+            const adhkarMasa = [
+                "أمسينا وأمسى الملك لله والحمد لله لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير.",
+                "اللهم بك أمسينا وبك أصبحنا وبك نحيا وبك نموت وإليك المصير.",
+                "أمسينا على فطرة الإسلام، وكلمة الإخلاص، ودين نبينا محمد صلى الله عليه وسلم، وملة أبينا إبراهيم حنيفا مسلما وما كان من المشركين."
+            ];
+    
+            const adhkarNawem = [
+                "بِاسْمِكَ رَبِّـي وَضَـعْتُ جَنْـبِي، وَبِكَ أَرْفَعُـهُ، فَإِنْ أَمْسَكْـتَ نَفْسِي فَاغْفِـرْ لَـهَا، وَإِنْ أَرْسَلْتَـهَا فَاحْفَظْـهَا بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ.",
+                "اللَّهُمَّ بِاسْمِكَ أَمُوتُ وَأَحْيَا.",
+                "سُبْحَانَ اللهِ، الحمدُ للهِ، الله أكبر (33 مرة)."
+            ];
+    
+            let currentCategory = 'sabah'; // Starting with 'sabah' Adhkar
+            let currentAdhkarIndex = 0;
+    
+            function showAdhkar(category, index) {
+                const adhkarContainer = document.getElementById(category);
+                let adhkarList;
+                switch (category) {
+                    case 'sabah':
+                        adhkarList = adhkarSabah;
+                        break;
+                    case 'masa':
+                        adhkarList = adhkarMasa;
+                        break;
+                    case 'nawem':
+                        adhkarList = adhkarNawem;
+                        break;
+                }
+                adhkarContainer.innerHTML = adhkarList[index];
+            }
+    
+            function nextAdhkar() {
+                let adhkarList = getAdhkarList();
+                if (currentAdhkarIndex < adhkarList.length - 1) {
+                    currentAdhkarIndex++;
+                } else {
+                    currentAdhkarIndex = 0;
+                }
+                showAdhkar(currentCategory, currentAdhkarIndex);
+            }
+    
+            function previousAdhkar() {
+                if (currentAdhkarIndex > 0) {
+                    currentAdhkarIndex--;
+                } else {
+                    currentAdhkarIndex = getAdhkarList().length - 1;
+                }
+                showAdhkar(currentCategory, currentAdhkarIndex);
+            }
+    
+            function restartAdhkar() {
+                currentAdhkarIndex = 0;
+                showAdhkar(currentCategory, currentAdhkarIndex);
+            }
+    
+            function getAdhkarList() {
+                switch (currentCategory) {
+                    case 'sabah':
+                        return adhkarSabah;
+                    case 'masa':
+                        return adhkarMasa;
+                    case 'nawem':
+                        return adhkarNawem;
+                    default:
+                        return [];
+                }
+            }
+    
+            function switchTab(category) {
+                currentCategory = category;
+                currentAdhkarIndex = 0;
+                const containers = document.getElementsByClassName('adhkar-container');
+                for (let i = 0; i < containers.length; i++) {
+                    containers[i].style.display = 'none';
+                }
+                const tabs = document.getElementsByClassName('tab');
+                for (let i = 0; i < tabs.length; i++) {
+                    tabs[i].classList.remove('active');
+                }
+                document.getElementById(category).style.display = 'block';
+                document.querySelector(`[onclick="switchTab('${category}')"]`).classList.add('active');
+                showAdhkar(currentCategory, currentAdhkarIndex);
+            }
+    
+            // Initialize with the first Adhkar of the selected category
+            switchTab('sabah');
+        </script>
+    
+    
+    </body></html>
+   
+    <footer>
+        <p>&copy; 2024 <span class="highlight">نبراس الدّ يـــــــــــن</span>. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    
+
+    
+</body>
+</html>

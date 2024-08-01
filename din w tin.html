@@ -1,0 +1,385 @@
+<html lang="ar" dir="rtl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نبراس الدّ يـــــــــــن</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: 'Amiri', serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #008080;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero .logo {
+    margin: 0 auto;
+}
+
+.hero .content {
+    margin: 20px 0;
+}
+
+.hero h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.hero .highlight {
+    color: #008080;
+}
+
+.hero button {
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.podcast-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.podcast-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.podcast-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.podcast-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.podcast-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.podcast-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.podcast-card p {
+    color: #666;
+}
+
+footer {
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer .highlight {
+    color: #008080;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* General styling for tabs */
+.tab {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: #008080;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.3s, border-bottom 0.3s;
+    text-decoration: none; /* Removes underline */
+}
+
+/* Styling for active tab */
+.tab.active {
+    color: #000;
+    border-bottom: 2px solid #008080; /* Adds an underline only to the active tab */
+}
+
+/* Styling for tabs on hover */
+.tab:hover {
+    color: #000;
+    border-bottom: 2px solid #008080; /* Adds an underline on hover */
+}
+
+/* Remove underline for links inside tabs */
+.tab a {
+    text-decoration: none; /* Removes underline from the links inside tabs */
+    color: inherit; /* Inherits color from the parent .tab element */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">الصفحة الرئيسية</a></li>
+                <li><a href="quran.html">القران الكريم</a></li>
+                <li><a href="ahadith.html">أحاديث</a></li>
+                <li><a href="podcast.html">بودكاست</a></li>
+                <li><a href="adhkar.html">أذكار</a></li>
+                <li><a href="#">المزيد</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="podcast-section">
+            <h2>بودكــــــاســـــــــات</h2>
+            <div class="tabs">
+                <div class="tab active"><a href="podcast.html">بودكاست لك أختي</a></div>
+                <div class="tab"><a href="khamis.html">الشيخ د.عثمان الخميس</a></div>
+                <div class="tab"><a href="hayfa.html">د. هيفاء يونس</a></div>
+<div class="tab"><a href="din w tin.html">دين و طين</a></div>
+<div class="tab"><a href="khaled jaber.html">د خالد بن حمد الجابر</a></div>
+<div class="tab"><a href="elhazimi.html">ياسر الحزيمي</a></div>
+
+            </div>
+            <div class="podcast-container">
+                <div class="podcast-card">
+                    <img src="https://external.xx.fbcdn.net/emg1/v/t13/10442610847073388952?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5qzKaozM8ks%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q39937oGHsue1vnChkz_ak_HsmnNqFkvbyOzGLmOatKAchU&oe=66AC280C&_nc_sid=c24604" alt="بودكاست 1" onclick="openModal('5qzKaozM8ks')">
+                    <h3> دين و طين - أين الله ؟
+                    </h3>
+                    <p>
+                        
+
+</p>
+                </div>
+                <div class="podcast-card">
+                    <img src="https://external.xx.fbcdn.net/emg1/v/t13/615689104577403741?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FVl59NJLihUo%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399rMle3m0jQ0zrNWzRQj-UNZiN0SLmQG4243vwlzkhMTk&oe=66AC44BB&_nc_sid=c24604" alt="بودكاست 2" onclick="openModal('Vl59NJLihUo')">
+                    <h3>دين و طين - رحلة واقعية إلى يوم القيامة والجنة والنار !
+
+                    </h3>
+                    <p>
+
+</p>
+                </div>
+                <div class="podcast-card">
+                    <img src="https://external.xx.fbcdn.net/emg1/v/t13/98977429747909511?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fye1YsyrETsQ%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q3994Az2_wbeyL1oW4soHPs-22pYj1AgvfEOZoLAtSLhWWY&oe=66AC5A82&_nc_sid=c24604" alt="بودكاست 3" onclick="openModal('ye1YsyrETsQ')">
+                    <h3>ولادة المخلوق الأعظم ! - دين و طين #1
+
+                    </h3>
+                    <p>
+
+</p>
+                </div>
+                <div class="podcast-card">
+                    <img src="https://external.xx.fbcdn.net/emg1/v/t13/11721296070525633135?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FQd_Hu8cWF5E%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399z3XM-i8Q0Lfo9AameD_YYdAwYGA-WR9H1ye__dvy2uw&oe=66AC70EB&_nc_sid=c24604" alt="بودكاست 4" onclick="openModal('JmCKsbqGEjz5_yRS')">
+                    <h3>لحظة اللقاء الأول بين جبريل والرسول ﷺ ! - دين و طين #2
+
+                    </h3>
+                    <p>
+
+</p>
+<div class="podcast-card">
+    <img src="https://external.xx.fbcdn.net/emg1/v/t13/1666751026802914381?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5aJP9RfamCE%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399k5mrFISm5YJmUIQpjl-m-WG969imTbZtL31pL_NLym8&oe=66AC7E39&_nc_sid=c24604" alt="بودكاست 1" onclick="openModal('BVYNoWu2aC0IE_Pk')">
+    <h3> انطلاق الدعوة وبداية المخاطر ! - دين و طين #3
+
+
+    </h3>
+    <p>
+
+</p>
+</div>
+<div class="podcast-card">
+    <img src="https://external.xx.fbcdn.net/emg1/v/t13/14336006047279188918?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2F6-6Y_rTCMG8%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q3996VLZdJCS-tu5zhPK8mxKxdBuH4LUIG-PjlGMWguPr98&oe=66AC6980&_nc_sid=c24604" alt="بودكاست 1" onclick="openModal('5gk4AKyuBevTpmr8')">
+    <h3>أصعب عام في حياة الرسول ﷺ! - دين و طين #4
+
+    </h3>
+    <p>
+
+</p>
+</div>
+<div class="podcast-card">
+    <img src="https://external.xx.fbcdn.net/emg1/v/t13/8954356631588187394?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FsEYnW4H5Q7o%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399dJpb6IseyMIQvp4j6ElZc2DePOWtj3SVQpt53rDlGBY&oe=66AC8599&_nc_sid=c24604" alt="بودكاست 1" onclick="openModal('f5559QwSE6EQNkP2')">
+    <h3>        لحظة اللقاء الأول بين الرسول ﷺ والجن ! - دين و طين #5
+
+    </h3>
+    <p>
+
+</div>
+<div class="podcast-card">
+    <img src="https://external.xx.fbcdn.net/emg1/v/t13/7779898650407155053?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FagKw55HdQAY%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399Pgr2MdAhOjVetw0OmQWB3fvfNBxREP06eJNZfSj4sq8&oe=66AC690D&_nc_sid=c24604" alt="بودكاست 1" onclick="openModal('Qfj9klQFG2JrgBay')">
+    <h3>  اول غزوة بعد ١٣ سنة من السكوت عن الأذى! - دين و طين #6
+      
+    </h3>
+    <p>
+
+</div>
+<div class="podcast-card">
+    <img src="https://external.xx.fbcdn.net/emg1/v/t13/13903730326290150172?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fm1_ifuObDSA%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399je8xZsifzbrjs5dJQlLm0RnrK1EJ8oBVs8-ac0C6MLg&oe=66AC65E8&_nc_sid=c24604" alt="بودكاست 1" onclick="openModal('nU-HBi9NAM533340')">
+    <h3>       وصف واقعي لإصابة الرسول ﷺ ! - المخلوق الأعظم - الحلقة السابعة
+
+
+    </h3>
+    <p>
+
+</div>
+<div class="podcast-card">
+    <img src="https://external.xx.fbcdn.net/emg1/v/t13/14770045705474704458?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FuPIk885w6fQ%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q3994bmEdPicVOsYOWzLUnlB_TPfseO7hK8JQa3-Nug_-wI&oe=66AC92CF&_nc_sid=c24604" alt="بودكاست 1" onclick="openModal('4dSwi4IcCU4rfNEN')">
+    <h3>       
+        لماذا اهتز عرش الله ؟! - المخلوق الأعظم - الحلقة الثامنة
+
+    </h3>
+    <p>
+
+</div>
+<div class="podcast-card">
+    <img src="https://external.xx.fbcdn.net/emg1/v/t13/15421806715725407530?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fm72nQjH8OsU%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399OrrcUy9N-LvBoRxzgK9SvP3nmIlkhiOQlKPmUHN0piY&oe=66AC932E&_nc_sid=c24604" alt="بودكاست 1" onclick="openModal('yvMc1ItYR-_aztfr')">
+    <h3>        
+        سيطرة الرسول على العرب وبدء مرحلة التمدد ! - دين و طين #9
+
+    </h3>
+    <p>
+
+</div>
+
+<div class="podcast-card">
+    <img src="https://external.xx.fbcdn.net/emg1/v/t13/18424004987809588788?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FUoHrAdhZs-g%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_Q399HLitujPDIh2bQ5v8xEc1qMH3iBG0sK9UIRkBAbxFzmE&oe=66AC6D14&_nc_sid=c24604" alt="بودكاست 1" onclick="openModal('AOfaB6u_ceHudVv6')">
+    <h3>       
+        آخر يوم في حياة الرسول ﷺ - دين و طين #10
+
+    </h3>
+    <p>
+
+</div>
+
+  
+            </div>
+        </div></section>
+    </main>
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <iframe id="videoPlayer" width="560" height="315" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 <span class="highlight">نبراس الدّ يـــــــــــن</span>. جميع الحقوق محفوظة.</p>
+    </footer>
+    <script>
+function openModal(videoId) {
+    var modal = document.getElementById("videoModal");
+    var videoPlayer = document.getElementById("videoPlayer");
+    videoPlayer.src = "https://www.youtube.com/embed/" + videoId;
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    var modal = document.getElementById("videoModal");
+    var videoPlayer = document.getElementById("videoPlayer");
+    videoPlayer.src = "";
+    modal.style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    var closeBtn = document.querySelector(".close");
+    closeBtn.addEventListener("click", closeModal);
+
+    window.addEventListener("click", function(event) {
+        var modal = document.getElementById("videoModal");
+        if (event.target == modal) {
+            closeModal();
+        }
+    });
+});
+
+    </script>
+
+
+</body></html>
